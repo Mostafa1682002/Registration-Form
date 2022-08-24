@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="title">Registration</div>
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span>Full Name</span>
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="input-box">
+            <span>Username</span>
+            <input type="text" placeholder="Enter your username" required />
+          </div>
+          <div class="input-box">
+            <span>Email</span>
+            <input type="email" placeholder="Enter your email" required />
+          </div>
+          <div class="input-box">
+            <span>Phone Number</span>
+            <input type="tel" placeholder="Enter your phone" required />
+          </div>
+          <div class="input-box">
+            <span>Password</span>
+            <input type="password" placeholder="Enter your password" required />
+          </div>
+          <div class="input-box">
+            <span>Confirm Password</span>
+            <input type="password" placeholder="Enter your password" required />
+          </div>
+        </div>
+        <div class="gender">
+          <div class="gender-title">Gender</div>
+          <div class="category">
+            <div class="male">
+              <input type="radio" name="gender" id="1" />
+              <label for="1">Male</label>
+            </div>
+            <div class="female">
+              <input type="radio" name="gender" id="2" />
+              <label for="2">Female</label>
+            </div>
+            <div class="not">
+              <input type="radio" name="gender" id="3" />
+              <label for="3">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Register" class="register" />
+      </form>
+    </div>
+  </body>
+</html>

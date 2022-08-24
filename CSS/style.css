@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: darkslateblue;
+}
+.content {
+  width: 800px;
+  background-color: #fff;
+  padding: 15px;
+  margin: 30px;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 400px;
+  }
+}
+.content .title {
+  font-size: 30px;
+  color: darkslateblue;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.content .user-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+@media (max-width: 768px) {
+  .content .user-details {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+}
+.content .user-details .input-box span {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 7px 0;
+}
+.content .user-details .input-box input {
+  width: 95%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+.content .user-details .input-box input:focus {
+  border-color: darkslateblue;
+}
+.content .gender {
+  margin: 20px 5px;
+}
+.content .gender-title {
+  font-size: 20px;
+  margin: 10px 0 0;
+  font-weight: 600;
+}
+
+.content .category {
+  display: flex;
+  align-items: center;
+}
+.content .category div {
+  margin: 7px 10px;
+  font-size: 20px;
+}
+.content .category div input {
+  width: 15px;
+  height: 15px;
+}
+@media (max-width: 768px) {
+  .content .category div {
+    font-size: 15px;
+  }
+  .content .category div input {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.content .register {
+  width: 100%;
+  display: block;
+  color: #fff;
+  background-color: rgb(108, 90, 227);
+  padding: 10px;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.content .register:hover {
+  background-color: darkslateblue;
+}
